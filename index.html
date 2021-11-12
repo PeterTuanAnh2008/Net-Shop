@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Netshop</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/reponsive.css" />
+    <link rel="icon"  href="/img/Logo/logo.png" />
+</head>
+
+<body id="body">
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="img-nav">
+                <img id="logo" src="/img/Logo/logo.png" alt="" />
+            </div>
+            <div class="content-nav">
+                <ul>
+                    <li><a href="http://netspace.site">Home page</a></li>
+                    <li><a href="http://netspace.site/contact">Contact</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+                <form>
+                    <input type="text" name="search" placeholder="Find somethings..." />
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+                <a href="https://www.youtube.com/channel/UCKjyqJTHQsJQcizfPnDQHoQ"><img class="icon" src="/img/Icon/youtube-icon.png" alt=""></a>
+                <a href="https://facebook.com/peterphananh2008"><img class="icon" src="/img/Icon/facebook-icon.png" alt=""></a>
+            </div>
+            <!-- The Modal -->
+            <button name="cart" onclick="alert('Error cart')" type="button" class="btn btn-cart">Add to cart</button>
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Cart
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Product</span>
+                            <span class="cart-price cart-header cart-column">Price</span>
+                            <span class="cart-quantity cart-header cart-column">Quantity</span>
+                        </div>
+                        <div class="cart-items">
+
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Total:</strong>
+                            <span class="cart-total-price">0$</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Close</button>
+                        <button type="button" class="btn btn-primary order">Pay</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- Product -->
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img" class="img-prd"
+                            src="/img/Cloths/ao1.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Black T-Shirt</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">50$</span>
+                            </div>
+                            <button name="button" onclick="alert('Added cart')" type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img" class="img-prd"
+                            src="/img/Cloths/tui1.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Handbag</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">150$</span>
+                            </div>
+                            <button name="button" onclick="alert('Added cart')" type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img" class="img-prd"
+                            src="/img/Cloths/giay2.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Jodan 1 Org</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">220$</span>
+                            </div>
+                            <button name="button" onclick="alert('Added cart')" type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img" class="img-prd"
+                            src="/img/Cloths/giay3.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Jodan 1 Colorful</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">200$</span>
+                            </div>
+                            <button name="button" onclick="alert('Added cart')" type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img" class="img-prd"
+                            src="/img/Cloths/hoodie1.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Hoodie blue</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">80$</span>
+                            </div>
+                            <button name="button" onclick="alert('Added cart')" type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img" class="img-prd"
+                            src="/img/Cloths/hoodie2.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Hoodie shark style</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">135$</span>
+                            </div>
+                            <button name="button" onclick="alert('Added cart')" type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img" class="img-prd"
+                            src="/img/Cloths/hoodie3.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Hoodie yellow style</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">50$</span>
+                            </div>
+                            <button name="button" onclick="alert('Added cart')" type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img" class="img-prd"
+                            src="/img/Cloths/non3.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Cap for travel</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">40$</span>
+                            </div>
+                            <button name="button" onclick="alert('Added cart')" type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+     <!-- footer -->
+     <footer>
+        <div class="footer-item">
+            <div class="img-footer">
+                <img src="/img/Logo/logo.png" alt="" />
+            </div>
+            <div class="social-footer">
+                <li><a target="_blank" href="https://www.facebook.com/peterphananh2008">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a></li>
+                <li><a target="_blank" href="https://www.youtube.com/channel/UCKjyqJTHQsJQcizfPnDQHoQ">
+                        <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                    </a></li>
+
+            </div>
+        </div>
+    </footer>
